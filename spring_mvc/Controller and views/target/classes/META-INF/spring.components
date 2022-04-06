@@ -1,0 +1,2 @@
+mvc.HelloWorldContainer=org.springframework.stereotype.Component
+mvc.HomeController=org.springframework.stereotype.Component
