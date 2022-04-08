@@ -1,0 +1,3 @@
+annotationDemo.HappyFortuneService=org.springframework.stereotype.Component
+annotationDemo.SportConfiguration=org.springframework.stereotype.Component
+annotationDemo.TennisCoach=org.springframework.stereotype.Component
