@@ -1,0 +1,6 @@
+aopDemo.DemoConfig=org.springframework.stereotype.Component
+aopDemo.aspect.MyApiAnalyticsAspect=org.springframework.stereotype.Component
+aopDemo.aspect.MyCloudLogAsyncAspect=org.springframework.stereotype.Component
+aopDemo.aspect.MyDemoLoggingAspect=org.springframework.stereotype.Component
+aopDemo.dao.AccountDAO=org.springframework.stereotype.Component
+aopDemo.dao.MembershipDAO=org.springframework.stereotype.Component
