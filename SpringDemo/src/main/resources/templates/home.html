@@ -1,0 +1,44 @@
+<!Doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:sec="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+    <title>Home page</title>
+</head>
+
+<body>
+
+<h2> Welcome to Student and Course Management</h2>
+<hr><br>
+
+<div>
+    <h3>
+        Welcome <span th:text="${#authentication.getPrincipal().getUsername}"></span>
+    </h3>
+    <span th:text="${#authentication.getPrincipal().authorities}"></span>
+
+
+</div>
+
+<br>
+
+<div sec:authorize="hasAnyRole('STUDENT' , 'INCHARGE')">
+    <h3><a href="/student/list">
+        Student List
+    </a></h3> </div>
+
+
+<div sec:authorize="hasRole('INSTRUCTOR')">
+
+    <h3><a href="/course/list">
+        Course List
+    </a></h3>
+</div>
+
+
+<br>
+<form action="/logout">
+    <input type="submit" value="Logout">
+</form>
+</body>
+</html>
